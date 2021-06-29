@@ -2,9 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-  // perform actions on the collection object
-  client.close();
-
+const connection = await client.connect();
 
 const compression = require("compression");
 
